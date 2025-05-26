@@ -38,6 +38,7 @@ inputs:
     testSelector: 'testAssemblies' 
     testAssemblyVer2: 'Onlineshoeportal.dll' 
     searchFolder: '$(Build.SourcesDirectory)\Onlineshoeportal\debug'
+    
 - task: PublishTestResults@2 
   inputs: 
     testResultsFormat: 'VSTest' 
