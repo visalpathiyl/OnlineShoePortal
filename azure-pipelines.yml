@@ -33,11 +33,15 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
-  inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: '**\*test*.dll'
+- task: VSTest@2 
+inputs: 
+    testSelector: 'testAssemblies' 
+    testAssemblyVer2: 'OnlineShoePortal.dll)' 
     searchFolder: '$(Build.SourcesDirectory)\OnlineShoePortal\bin\Release'
+- task: PublishTestResults@2 
+  inputs: 
+    testResultsFormat: 'VSTest' 
+    testResultsFiles: '**/TestResults/*.trx'
 
 - task: PublishBuildArtifacts@1
   inputs:
