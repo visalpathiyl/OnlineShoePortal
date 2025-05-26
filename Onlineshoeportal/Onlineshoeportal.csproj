@@ -96,8 +96,8 @@
     <Compile Include="POM Methods\LogInMethod.cs" />
     <Compile Include="POM\LoginPage.cs" />
     <Compile Include="POM\SignUp.cs" />
-    <Compile Include="TCID_01_UserRegistration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\TCID_01_UserRegistration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
