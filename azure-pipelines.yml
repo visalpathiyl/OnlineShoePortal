@@ -37,7 +37,7 @@ steps:
 inputs: 
     testSelector: 'testAssemblies' 
     testAssemblyVer2: 'Onlineshoeportal.dll' 
-    searchFolder: '$(Build.SourcesDirectory)\Onlineshoeportal\debug'
+    searchFolder: '$(Build.SourcesDirectory)'
 
 - task: PublishBuildArtifacts@1
   inputs:
