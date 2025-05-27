@@ -36,7 +36,7 @@ steps:
 - task: VSTest@2 
   inputs: 
     testSelector: 'testAssemblies' 
-    testAssemblyVer2: 'Onlineshoeportal.dll' 
+    testAssemblyVer2: '**\*.dll' 
     searchFolder: '$(Build.SourcesDirectory)'
 
 - task: PublishBuildArtifacts@1
