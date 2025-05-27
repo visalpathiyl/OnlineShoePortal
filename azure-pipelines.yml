@@ -34,7 +34,7 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: VSTest@2 
-inputs: 
+  inputs: 
     testSelector: 'testAssemblies' 
     testAssemblyVer2: 'Onlineshoeportal.dll' 
     searchFolder: '$(Build.SourcesDirectory)'
