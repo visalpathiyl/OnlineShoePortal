@@ -39,12 +39,11 @@ steps:
     testAssemblyVer2: '**/Onlineshoeportal.Tests.dll'
     searchFolder: '$(Build.SourcesDirectory)'
 
-- task: PublishBuildArtifacts@2
+- task: PublishBuildArtifacts@1
   inputs:
-    testResultsFormat: 'VSTest'
-    testResultsFiles: '**/*.trx'
-    searchFolder: '$(System.DefaultWorkingDirectory)'
-    failTaskOnFailedTests: true
+    pathToPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: 'drop'
+    publishLocation: 'Container'
 
 - task: CopyFiles@2
   inputs:
