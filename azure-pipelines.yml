@@ -48,6 +48,6 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)\OnlineShoePortal\bin\Release'
+    SourceFolder: '$(Build.SourcesDirectory)\Onlineshoeportal\bin\Release'
     Contents: '**\*'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
