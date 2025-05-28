@@ -28,7 +28,25 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+# - task: VSTest@2
+#   inputs:
+#     platform: '$(buildPlatform)'
+#     configuration: '$(buildConfiguration)'
+
 - task: VSTest@2
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: '**/Onlineshoeportal.Tests.dll'
+    searchFolder: '$(Build.SourcesDirectory)'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '**/*.trx'
+    searchFolder: '$(Agent.TempDirectory)/TestResults'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\Onlineshoeportal\bin\Release'
+    Contents: '**\*'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
