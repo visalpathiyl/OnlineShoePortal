@@ -46,7 +46,7 @@ steps:
   inputs:
     testResultsFormat: 'VSTest'
     testResultsFiles: '**/*.trx'
-    searchFolder: '$(System.DefaultWorkingDirectory)'
+    searchFolder: '$(Build.ArtifactStagingDirectory)/TestResults'
 
 - task: CopyFiles@2
   inputs:
