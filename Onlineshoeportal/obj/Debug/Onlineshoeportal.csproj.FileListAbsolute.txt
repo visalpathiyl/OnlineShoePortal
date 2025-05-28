@@ -84,3 +84,13 @@ C:\Users\hp\source\repos\OnlineShoePortalAfterCloned\Onlineshoeportal\bin\Debug\
 C:\Users\hp\source\repos\OnlineShoePortalAfterCloned\Onlineshoeportal\bin\Debug\WebDriver.xml
 C:\Users\hp\source\repos\OnlineShoePortalAfterCloned\Onlineshoeportal\bin\Debug\WebDriver.Support.xml
 C:\Users\hp\source\repos\OnlineShoePortalAfterCloned\Onlineshoeportal\obj\Debug\Onlinesh.70350EE2.Up2Date
+C:\Users\hp\agent\_work\1\a\selenium-manager\linux\selenium-manager
+C:\Users\hp\agent\_work\1\a\selenium-manager\macos\selenium-manager
+C:\Users\hp\agent\_work\1\a\selenium-manager\windows\selenium-manager.exe
+C:\Users\hp\agent\_work\1\a\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\hp\agent\_work\1\a\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\hp\agent\_work\1\a\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\hp\agent\_work\1\a\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\hp\agent\_work\1\a\Onlineshoeportal.dll.config
+C:\Users\hp\agent\_work\1\a\Onlineshoeportal.dll
+C:\Users\hp\agent\_work\1\a\Onlineshoeportal.pdb
