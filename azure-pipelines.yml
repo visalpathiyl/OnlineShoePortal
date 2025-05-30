@@ -36,8 +36,8 @@ steps:
 - task: VSTest@2
   inputs:
     testSelector: 'testAssemblies'
-    testAssemblyVer2: '**/OnlineShoePortal.dll'
-    searchFolder: '$(System.DefaultWorkingDirectory)''
+    testAssemblyVer2: '**/Onlineshoeportal.Tests.dll'
+    searchFolder: '$(System.DefaultWorkingDirectory)'
 
 - task: PublishTestResults@2
   inputs:
