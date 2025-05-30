@@ -36,14 +36,14 @@ steps:
 - task: VSTest@2
   inputs:
     testSelector: 'testAssemblies'
-    testAssemblyVer2: '**/Onlineshoeportal.Tests.dll'
-    searchFolder: '$(Build.SourcesDirectory)'
+    testAssemblyVer2: '**/OnlineShoePortal.dll'
+    searchFolder: '$(System.DefaultWorkingDirectory)''
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'VSTest'
     testResultsFiles: '**/*.trx'
-    searchFolder: '$(System.DefaultWorkingDirectory)'
+    searchFolder: '$(Agent.TempDirectory)\TestResults'
 
 - task: CopyFiles@2
   inputs:
