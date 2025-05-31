@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Onlineshoeportal.POM;
 using OpenQA.Selenium.Support.UI;
-using static Onlineshoeportal.GenericUtilities.GenericUtilitiesClass;
-using static Onlineshoeportal.ObjectInitialization.ObjectInitializations;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Configuration;
+using System.Threading.Tasks;
+using static Onlineshoeportal.GenericUtilities.GenericUtilitiesClass;
+using static Onlineshoeportal.ObjectInitialization.ObjectInitializations;
 
 namespace Onlineshoeportal.POM_Methods
 {
@@ -27,6 +28,16 @@ namespace Onlineshoeportal.POM_Methods
             Assert.IsTrue(signup.signin_LogIn.Displayed, "Log in button is visible");
             Assert.IsTrue(signup.Register_button.Displayed, "Register button is visible");
 
+        }
+
+        public void Log_In(string login_un, string login_pass)
+        {
+            signup.hamberger.Click();
+            generic_methods.waitforanEleImplicitily();
+            signup.SignIn.Click();
+            user_login_page.Login_UserName.SendKeys(login_un);
+            user_login_page.Login_Password.SendKeys(login_pass);
+            signup.signin_LogIn.Click();
         }
 
         public void validate_errormessage_Registerpage()

@@ -77,10 +77,10 @@
       <HintPath>..\packages\Microsoft.TestPlatform.ObjectModel.17.13.0\lib\net462\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+      <HintPath>..\packages\MSTest.TestFramework.3.9.1\lib\net462\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+      <HintPath>..\packages\MSTest.TestFramework.3.9.1\lib\net462\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -141,16 +141,21 @@
     <Compile Include="Global\CommonTestDataCollections.cs" />
     <Compile Include="Global\ObjectInitializations.cs" />
     <Compile Include="POM Methods\LogInMethod.cs" />
-    <Compile Include="POM\LoginPage.cs" />
+    <Compile Include="POM\User_Registration_Page.cs" />
     <Compile Include="POM\SignUp.cs" />
+    <Compile Include="POM\User_Login_Page.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\TCID_01_UserRegistration.cs" />
+    <Compile Include="Tests\TCID_02_LogIn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Analyzer Include="..\packages\MSTest.Analyzers.3.9.1\analyzers\dotnet\cs\MSTest.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\MSTest.Analyzers.3.9.1\analyzers\dotnet\cs\MSTest.Analyzers.dll" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

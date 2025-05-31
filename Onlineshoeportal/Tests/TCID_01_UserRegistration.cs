@@ -10,7 +10,6 @@ namespace Onlineshoeportal
     [TestClass]
     public class TCID_01_UserRegistration 
     {
-        [TestMethod]
         [DriverSetUp]
         public void SignInPage_and_LoginPage()
         {
