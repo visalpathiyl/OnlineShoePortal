@@ -40,6 +40,17 @@ namespace Onlineshoeportal.POM_Methods
             signup.signin_LogIn.Click();
         }
 
+        public void Login_error()
+        {
+            signup.hamberger.Click();
+            generic_methods.waitforanEleImplicitily();
+            signup.SignIn.Click();
+            signup.signin_LogIn.Click();
+            string actual_error = user_login_page.login_error.Text;
+            string expected_error = "Both Username and Password field are required";
+            Assert.AreEqual(actual_error, expected_error);
+
+        }
         public void validate_errormessage_Registerpage()
         {
             String errormsg = loginPage.Login_errormsg.Text;

@@ -13,6 +13,8 @@ namespace Onlineshoeportal.POM
         public IWebElement Login_UserName => GetElementIfPresent(By.XPath("//form[@id='second_form']/div[1]/input"));
         public IWebElement Login_Password => GetElementIfPresent(By.XPath("//form[@id='second_form']/div[2]/input"));
 
+        public IWebElement login_error => GetElementIfPresent(By.XPath("//form[@id='second_form']/div[2]/span"));
+
         
     }
 }
